@@ -1,0 +1,1149 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Parliament of India, Lok Sabha</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://loksabha.nic.in/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- font size switcher -->
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="small" href="https://loksabha.nic.in/css/css_small.css" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="bigger" href="https://loksabha.nic.in/css/css_big.css" />
+    <!-- For font size chooser -->
+    <!-- Navigation STARTS here-->
+    <link href="https://loksabha.nic.in/css/megafish.css" rel="stylesheet" type="text/css" />
+    <!-- Navigation Ends here-->
+    <!--For Colorbox -->
+    <script type="text/javascript" src="https://loksabha.nic.in/js/jquery.js"></script>
+    <script type="text/javascript" src="https://loksabha.nic.in/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://loksabha.nic.in/js/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="https://loksabha.nic.in/js/jquery.colorbox.js"></script>
+    <script src="https://loksabha.nic.in/js/tytabs.jquery.min.js" type="text/javascript"></script>
+    <script src="LoksabhaCalendar/jquery.tooltipster.js" type="text/javascript"></script>
+    <link href="css/colorbox.css" rel="stylesheet" type="text/css" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="fusiaBlack"
+        href="css/fusiaBlack.css" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="yelBlack"
+        href="css/yelBlack.css" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="yelBlue" href="css/yelBlue.css" />
+    <script src="js/switcher.js" type="text/javascript"></script>
+    <!-- For font size chooser -->
+    <script src="https://loksabha.nic.in/js/swithcer.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://loksabha.nic.in/js/glDatePicker.min.js"></script>
+    <script type="text/javascript" src="https://loksabha.nic.in/js/jquery.flexslider-min.js"></script>
+    <script src="https://loksabha.nic.in/js/news-scroller.js" type="text/javascript"></script>
+    <!--Start - Picture Strip Rotate -->
+    <script type="text/javascript" src="https://loksabha.nic.in/js/jquery.simplyscroll.js"></script>
+    <link rel="stylesheet" href="https://loksabha.nic.in/css/jquery.simplyscroll.css" media="all" type="text/css" />
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                $("#scroller").simplyScroll();
+            });
+        })(jQuery);
+    </script>
+    <!--End - Picture Strip Rotate -->
+    <!-- FlexSlider STARTS HERE-->
+    <script type="text/javascript">
+        $(window).load(function () {
+            var myDatePicker = $('#mydate').glDatePicker(
+		{
+		    showAlways: true//,
+		    //selectableDOW: [0, 4, 4]
+		})
+		   .glDatePicker(true);
+
+        });
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        var $ = jQuery.noConflict();
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function openExtLink(url) {
+            if (confirm('This link shall take you to a page/website outside this website.')) { var win = window.open(url, '_blank'); win.focus(); }
+
+        }
+    </script>
+    <!-- FlexSlider ENDS HERE-->
+    <style type="text/css">
+        .nav ul li a.active
+        {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+    </style>
+    <!-- clockBox STARTS HERE-->
+    <script type="text/javascript">
+
+        function getCurrentIST() {
+            var dte = new Date();
+            dte.setTime(dte.getTime() + (dte.getTimezoneOffset() + 330) * 60 * 1000);
+            nhour1 = dte.getHours();
+            nmin1 = dte.getMinutes();
+            if (nhour1 == 0) { ap1 = " AM"; nhour1 = 12; }
+            else if (nhour1 <= 11) { ap1 = " AM"; }
+            else if (nhour1 == 12) { ap1 = " PM"; }
+            else if (nhour1 >= 13) { ap1 = " PM"; nhour1 -= 12; }
+            if (nmin1 <= 9) { nmin1 = "0" + nmin1; }
+            document.getElementById('clockbox1').innerHTML = "" + nhour1 + ":" + nmin1 + ap1 + "";
+            setTimeout("getCurrentIST()", 1000);
+        }
+
+        function GetClock() {
+            d = new Date();
+            nhour = d.getHours();
+            nmin = d.getMinutes();
+            if (nhour == 0) { ap = " AM"; nhour = 12; }
+            else if (nhour <= 11) { ap = " AM"; }
+            else if (nhour == 12) { ap = " PM"; }
+            else if (nhour >= 13) { ap = " PM"; nhour -= 12; }
+            if (nmin <= 9) { nmin = "0" + nmin; }
+            document.getElementById('clockbox2').innerHTML = "" + nhour + ":" + nmin + ap + "";
+            setTimeout("getCurrentIST()", 1000);
+            setTimeout("GetClock()", 1000);
+        }
+        window.onload = GetClock;
+        
+    </script>
+    <!-- clockBox ENDS HERE-->
+    <script language="javascript" type="text/javascript">
+        / $(document).ready(function () {
+            $('input[type="text"]').keypress(function (event) {
+                if (event.keyCode == '13') { //jquery normalizes the keycode 
+
+                    event.preventDefault(); //avoids default action
+                    $(this).parent().find('input[type="submit"]').trigger('click');
+                     }
+            });
+        });
+    </script>
+    <!-- For Special Character Block Start  -->
+    <script src="js/Global_Search_Validation.js" type="text/javascript"></script>
+    <!--  For Special Character Block End   -->
+    
+    
+    
+    
+    <link href="LoksabhaCalendar/tooltipster.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.tooltip').tooltipster({
+                //theme: 'tooltipster-Shadow',
+                contentAsHTML: true,
+                interactive: true
+            });
+        });
+
+    </script>
+    
+    <!--For Colorbox -->
+    
+    <style type="text/css">
+        .caption_title_line
+        {
+            height: 258px;
+            position: relative;
+        }
+        .OtherUpdates11
+        {
+            margin-top: 11px;
+        }
+.OtherUpdates
+        {
+            margin-top: 12px;
+        }
+        .flex-caption a
+        {
+            border-bottom: 0px dashed #999999;
+            bottom: 41px;
+            position: absolute;
+            width: 142px;
+        }
+        a.iframeRepresentative
+        {
+            width: 30px;
+            height: 24px;
+            line-height: 2.3em;
+            font-weight: bold;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            margin: 0;
+            padding: 0;
+            font-size: 1.2em;
+            float: left;
+            text-align: center;
+        }
+        .findRepresn input
+        {
+            border: 1px solid #e0e0e0;
+            height: 22px;
+            margin: 0;
+            padding: 0;
+            width: 191px;
+            float: left;
+        }
+        .contentArea
+        {
+            padding: 10px 0 0 !important;
+        }
+        .photoGallHome, .virtualTour
+        {
+            margin-top: 0px !important;
+        }
+        .style1
+        {
+            font-size: small;
+        }
+        .style2
+        {
+            color: #006600;
+            font-size: medium;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        function SetTarget() {
+            document.forms[0].target = "_blank";
+        }
+    </script>
+    <script language="javascript" type="text/javascript">
+        // all jQuery events are executed within the document ready function
+        //        $(document).ready(function () {
+
+        //            $("#txtMapSearch").bind("keypress", function (event) {
+
+        //                var keycode = (event.keyCode ? event.keyCode : (event.which ? event.which : event.charCode));
+        //                if (keycode == 13) {
+        //                    event.stopPropagation();
+        //                    $('[id$="lnkBtnMap"]').click();
+        //                    return false;
+
+        //                } else return true;
+
+        //            }); // end of function
+
+        //        });
+        //        $(document).ready(function () {
+        //            $(".iframeRepresentative").click(function () {
+        //                var representative = document.getElementById("txtMapSearch").value;
+        //                if (representative != '') {
+        //                    $(".iframeRepresentative").colorbox({ iframe: true, inline: true, innerWidth: 760, innerHeight: 550, href: "PopupRepresentative.aspx?SearchValue=" + representative
+        //                    });
+        //                    document.getElementById("txtMapSearch").value = '';
+        //                }
+        //                else {
+        //                    alert('Please enter member name');
+        //                }
+        //            });
+        //        });
+
+        $(document).ready(function () {
+
+            $('#ContentPlaceHolder1_txtMapSearch').bind("keypress", function (event) {
+                var keycode = (event.keyCode ? event.keyCode : (event.which ? event.which : event.charCode));
+                if (keycode == 13) {
+                    event.stopPropagation();
+                    $('[id$="lnkBtnMap"]').click();
+                    return false;
+
+                } else return true;
+
+            }); // end of function
+
+        });
+        $(document).ready(function () {
+            $(".iframeRepresentative").click(function () {
+                var representative = $('#ContentPlaceHolder1_txtMapSearch').val();
+                if (representative != '') {
+                    //window.open("ShowRepresentative.aspx?SearchValue=" + representative);
+                    window.location.href = "ShowRepresentative.aspx?SearchValue=" + representative
+                    $('#ContentPlaceHolder1_txtMapSearch').val('');
+                    return false;
+                }
+                else {
+                    alert('Please enter member name');
+                }
+            });
+        });
+
+
+        $(document).ready(function () {
+            $(".iframeUpdates").click(function () {
+
+                $(".iframeUpdates").colorbox({ iframe: true, inline: true, innerWidth: 500, innerHeight: 550, href: "popupAllUpdates.aspx"
+                });
+
+            });
+        });
+
+        $(document).ready(function () {
+            $(".iframeLegislatives").click(function () {
+                $(".iframeLegislatives").colorbox({ iframe: true, inline: true, innerWidth: 500, innerHeight: 550, href: "popupLegislativeLinks.aspx"
+                });
+
+            });
+
+            $(".iframeJudicial").click(function () {
+                $(".iframeJudicial").colorbox({ iframe: true, inline: true, innerWidth: 500, innerHeight: 550, href: "popupJudicialLinks.aspx"
+                });
+
+            });
+
+            $(".iframeOfficial").click(function () {
+                $(".iframeOfficial").colorbox({ iframe: true, inline: true, innerWidth: 500, innerHeight: 550, href: "popupOfficialLinks.aspx"
+                });
+
+            });
+            $(".iframeDownloads").click(function () {
+                $(".iframeDownloads").colorbox({ iframe: true, inline: true, innerWidth: 500, innerHeight: 550, href: "popupDownloadLinks.aspx"
+                });
+
+            });
+        });
+
+
+       
+    </script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $(".iframeConference").colorbox({ iframe: true, inline: true, innerWidth: 760, innerHeight: 550, href: "popupConferenceLinks.aspx"
+            });
+        });
+    </script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $(".iframeProcedures").colorbox({ iframe: true, inline: true, innerWidth: 760, innerHeight: 550, href: "popupParliamentProcedureList.aspx"
+            });
+        });
+    </script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $(".iframePDF").colorbox({ iframe: true, inline: true, innerWidth: 760, innerHeight: 550
+            });
+        });
+    </script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $(".iframeChart").colorbox({ iframe: true, inline: true, innerWidth: 760, innerHeight: 550
+            });
+        });
+    </script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $(".iframeScroll").colorbox({ iframe: true, inline: true, innerWidth: 760, innerHeight: 550
+            });
+        });
+    </script>
+    <script language="javascript" type="text/javascript">
+        //        $(".iframeLeader").click(function () {
+        //            $(".iframeLeader").colorbox({ iframe: true, inline: true, innerWidth: 500, innerHeight: 550, href: "popupLeaderofHouse.aspx"
+        //            });
+
+        //        });
+
+        //        $(document).ready(function () {
+        //            $(".iframeLeader").colorbox({ iframe: true, inline: true, innerWidth: 760, innerHeight: 550, href: "popupLeaderofHouse.aspx"
+        //            });
+        //        });
+        
+    </script>
+    <!--For Colorbox -->
+    <!--For Calendar and Tab -->
+    <!--For Calendar and Tab -->
+    
+
+</head>
+<body>
+    <form method="post" action="" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="dUyYjjBam1egb7/WwVId88a4JIcLyxDkX1meXjk3V5e1O0xMXyrNiiT1PHIIB6V+UQfXu4DNI1iM2vbY+5Cb69Nj2mYAfoD4lXQFzh8vT8hTYe7cKLRGzBvmTrxRZwCGCoYNBMT9xCJ+vbmYZLFqJxah2Moery6A/kwp26aSoSdrWP98sNVav5VtqoV+vlsgiJBj/d/vVPZGTnq9qgdOxN6SmX384wCYxplj9Cz+wKlVkTc3UZxBvwEalwaV6kgeGT0/b0MAQOK6KgV8rl8FJw==" />
+</div>
+    <!-- Top Pan -->
+    <div id="topPan">
+        <div class="wrapper">
+            <div class="topLinks">
+                <ul class="smLinks">
+                    <!--<li><a href="Screenreaderaccess.aspx" title="Screen Readers Access">Screen Reader Access</a></li>-->
+                    <li><a href="#mainContent" title="Skip to main content">Skip to main content</a></li>
+                    <li><a href="#nav" title="Skip to navigation">Skip to navigation</a></li>
+                    <li class="noDiv" style="padding-right: 0;">Text Size:</li>
+                    <li class="noDiv small"><a href="javascript:void(0);" onclick="chooseStyle('small', 60);"
+                        title="Smaller Font Size">A</a></li>
+                    <li class="noDiv midiam"><a href="javascript:void(0);" onclick="chooseStyle('none', 60);"
+                        title="Default Font Size">A</a></li>
+                    <li class="big"><a href="javascript:void(0);" onclick="chooseStyle('bigger', 60);"
+                        title="Bigger Font Size">A</a></li>
+                    <li><a href="javascript:chooseStyle('none', 60);" title="Select Default">
+                        <img src="https://loksabha.nic.in/images/normal.gif" alt="Normal Theme" title="Select Normal Theme" /></a>
+                        <a href="javascript:chooseStyle('fusiaBlack', 60);" title="Select fusiaBlack">
+                            <img src="https://loksabha.nic.in/images/fusia.gif" alt="Fusia on Black Theme" title="Select Fusia on Black Theme" /></a>
+                        <a href="javascript:chooseStyle('yelBlue', 60);" title="Select yelBlue">
+                            <img src="https://loksabha.nic.in/images/blue.gif" alt="Yellow on Blue Theme" title="Select Yellow on Blue Theme" /></a>
+                        <a href="javascript:chooseStyle('yelBlack', 60);" title="Select yelBlack">
+                            <img src="https://loksabha.nic.in/images/yellow.gif" alt="Yellow on Black Theme" title="Select Yellow on Black Theme" /></a>
+                    </li>
+                    <li class="noDiv"><a href="http://loksabhahindi.nic.in/" title="Hindi" target="_blank">
+                        <img src="https://loksabha.nic.in/images/hindi.gif" alt="Hindi" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /Top Pan -->
+    <!-- Logo Pan -->
+    <div class="wrapper">
+        <h1 class="logo">
+            <a target="_blank" href="http://parliamentofindia.nic.in/" title="Parliament of India, Lok Sabha, House of the People">
+                Parliament of India<br />
+                <span class="loasabha">Lok Sabha</span><br />
+                <span class="housePeople">House of the People</span></a></h1>
+        <div class="serchPan">
+            <div class="searchBox">
+                <input name="ctl00$txtSearchGlobal" type="text" id="txtSearchGlobal" class="search" Placeholder="Search" onkeypress="return IsAlphaNumeric(event);" />
+                <input type="submit" name="ctl00$btnSearch" value="Go" onclick="return IsAlphaNumericPast();" id="btnSearch" class="searchBtn" />
+                <br />
+                <span id="error" style="color: Red; display: none">* Special Characters not allowed</span>
+                <br style="clear: both;" />
+                <div style="font-size: 1.2em!important;">
+                    <table id="rdbtnlist" cellspacing="5" cellpadding="5">
+	<tr>
+		<td><input id="rdbtnlist_0" type="radio" name="ctl00$rdbtnlist" value="1" checked="checked" /><label for="rdbtnlist_0">Within Website</label></td><td><input id="rdbtnlist_1" type="radio" name="ctl00$rdbtnlist" value="2" /><label for="rdbtnlist_1">Web</label></td>
+	</tr>
+</table>
+                </div>
+            </div>
+            <div class="clockBox">
+                <div class="clock">
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+                        style="width: 60px; height: 60px;">
+                        <param name="movie" value="https://loksabha.nic.in/images/clock-s.swf"></param>
+                        <param name="quality" value="high"></param>
+                        <param name="wmode" value="transparent"></param>
+                        <param name="menu" value="false"></param>
+                        <embed src="images/clock-s.swf" type="application/x-shockwave-flash" allowscriptaccess="always"
+                            wmode="transparent" menu="false" allowfullscreen="true" width="60" height="60">       
+								 </embed>
+                    </object>
+                </div>
+                <p style="padding-bottom: 0px!important; font-size: 1.2em!important;">
+                    <span class="indtime">India Time</span> <span id="clockbox1" style="color: #01538C;">
+                    </span>
+                    <br />
+                    <span class="yourtime">Your Time</span> <span id="clockbox2" style="color: #01538C;">
+                    </span>
+                    <br />
+                    
+                    Monday, October 25, 2021</p>
+            </div>
+            <br />
+        </div>
+    </div>
+    <!-- /Logo Pan -->
+    <!-- Header -->
+    <div class="header">
+        <div class="wrapper">
+            <img src="https://loksabha.nic.in/images/header-pic.jpg" alt="" /></div>
+    </div>
+    
+    <div>
+        <ul id="scroller">
+            <li>
+                <img src="https://loksabha.nic.in/images/pic-strip_1.jpg"/></li>
+            <li>
+                <img   src="https://loksabha.nic.in/images/pic-strip_1.jpg"/></li>
+        </ul>
+    </div>
+    <!-- /Header -->
+    <div id="nav">
+        
+<div class="nav">
+    <div class="wrapper_nav">
+            <ul class="sf-menu topNav" id="example">            
+            
+            <li><a id="Home" href="http://loksabha.nic.in" title="Home">Home</a></li><li><a id="Members" href="http://loksabhaph.nic.in/Members/AlphabeticalList.aspx" title="Members">Members</a><div class="sf-mega"><div class="sf-mega-section"><h2></h2><ul><li><a href="http://loksabhaph.nic.in/Members/AlphabeticalList.aspx">Sitting Members</a></li><li><a href="http://loksabhaph.nic.in/Members/Memberhomepage.aspx">Members Home Page</a></li><li><a href="http://memberls.nic.in/">Members&#39; Portal</a></li><li><a href="http://loksabhaph.nic.in/Members/membercontactdetails.aspx">Contact Details</a></li><li><a href="http://loksabhaph.nic.in/Members/MemberSearch.aspx">Members Search</a></li><li><a href="http://loksabhaph.nic.in/Members/StatisticalAnalysis.aspx">Statistical Analysis</a></li><li><a href="http://loksabhaph.nic.in/Members/MemberAttendance.aspx">Attendance of Members</a></li><li><a href="http://loksabhaph.nic.in/Members/handbook.aspx">Handbook </a></li><li><a href="http://loksabhaph.nic.in/Members/lokprev.aspx">Members Since 1952</a></li><li><a href="https://eparlib.nic.in/simple-search?location=123456789%2F16&query=who%27s+who">Digitized Who&#39;s Who</a></li><li><a href="http://loksabhaph.nic.in/Members/MembersDied_Resigned.aspx">Others</a></li></ul></div><div class="sf-mega-section"><img src="http://loksabhaph.nic.in/writereaddata/menuimages/member-thumb.jpg" width="214" height="162" /> </div></div></li><li><a id="Business" href="http://loksabhaph.nic.in/Business/ListofBusiness.aspx" title="Business">Business</a><div class="sf-mega"><div class="sf-mega-section"><h2></h2><ul><li><a href="http://loksabhaph.nic.in/Business/ProvisionalCalendar.aspx">Provisional Calendar</a></li><li><a href="http://loksabhaph.nic.in/Business/ListofBusiness.aspx">List of Business</a></li><li><a href="http://loksabhaph.nic.in/Business/paperlaid.aspx">Papers to be Laid</a></li><li><a href="http://loksabhaph.nic.in/Business/UserPrivateMember.aspx">List of Private Members&#39; Business</a></li><li><a href="http://loksabhaph.nic.in/Business/UserBulletin1.aspx">Bulletin-I</a></li><li><a href="https://eparlib.nic.in/handle/123456789/795919">Digitized Lok Sabha Bulletin Part I</a></li><li><a href="http://loksabhaph.nic.in/Business/UserBulletin2.aspx">Bulletin-II</a></li><li><a href="http://loksabhaph.nic.in/Business/StatementOfWork.aspx">Statement of Work</a></li><li><a href="http://loksabhaph.nic.in/Business/SpecialMentionDeb17.aspx">Special Mentions (ZERO HOUR)</a></li><li><a href="http://loksabhaph.nic.in/Business/ResumeOfWork.aspx">Resume of Work</a></li><li><a href="https://eparlib.nic.in/handle/123456789/785924">Digitized Resume of Work done by Lok Sabha</a></li></ul></div><div class="sf-mega-section"><img src="http://loksabhaph.nic.in/writereaddata/menuimages/business-thumb.jpg" width="214" height="162" /> </div></div></li><li><a id="Questions" href="http://loksabhaph.nic.in/Questions/Qtextsearch.aspx" title="Questions">Questions</a><div class="sf-mega"><div class="sf-mega-section"><h2></h2><ul><li><a href="http://loksabhaph.nic.in/Questions/QuestionsHome.aspx">Home</a></li><li><a href="http://loksabhaph.nic.in/Questions/questionlist.aspx">Question List</a></li><li><a href="http://loksabhaph.nic.in/Questions/QuestionStatus_Home.aspx">Status of notices of question</a></li><li><a href="http://164.100.47.193/provisionalcalender/17/CalendarUploading.pdf">Questions Calendar</a></li><li><a href="http://loksabhaph.nic.in/Questions/GroupingOfMinistries.aspx">Grouping of Ministries - Alphabetical</a></li><li><a href="https://mpa.gov.in/documents/parliament-units-phones">Officers in Min./Dept. Dealing with Parliamentary Work</a></li><li><a href="http://loksabhaph.nic.in/Questions/Qtextsearch.aspx">Question Search</a></li><li><a href="http://loksabhaph.nic.in/Questions/supleadvanceqsearch.aspx">Supplementary Questions</a></li></ul></div><div class="sf-mega-section"><img src="http://loksabhaph.nic.in/writereaddata/menuimages/question.jpg" width="214" height="162" /> </div></div></li><li><a id="Debates" href="http://loksabhaph.nic.in/Debates/Debatetextsearch16.aspx" title="Debates">Debates</a><div class="sf-mega"><div class="sf-mega-section"><h2></h2><ul><li><a href="http://loksabhaph.nic.in/Debates/debates.aspx">Introduction</a></li><li><a href="http://loksabhaph.nic.in/Debates/Synopsis.aspx">Synopsis</a></li><li><a href="http://loksabhaph.nic.in/Debates/uncorrecteddebate.aspx">Uncorrected Debate</a></li><li><a href="http://loksabhaph.nic.in/Debates/textofdebate.aspx">Text of Debate</a></li><li><a href="https://eparlib.nic.in/handle/123456789/6">Digitized Debates</a></li><li><a href="http://loksabhaph.nic.in/Debates/cadebadvsearch.aspx">Constituent Assembly Debates</a></li><li><a href="http://loksabhaph.nic.in/Debates/withhumour.aspx">Wit And Humour</a></li><li><a href="http://loksabhaph.nic.in/Debates/DebateAdvSearch17.aspx">Debate Search</a></li><li><a href="http://loksabhaph.nic.in/Debates/hindifonts.aspx">Hindi Fonts</a></li><li><a href="http://loksabhaph.nic.in/Debates/disclaimer.aspx">Disclaimer</a></li></ul></div><div class="sf-mega-section"><img src="http://loksabhaph.nic.in/writereaddata/menuimages/debate.jpg" width="214" height="162" /> </div></div></li><li><a id="Papers Laid" href="http://loksabhaph.nic.in/PapersLaid/SearchPaperslaid.aspx" title="Papers Laid">Papers Laid</a><div class="sf-mega"><div class="sf-mega-section"><h2></h2><ul><li><a href="http://loksabhaph.nic.in/PapersLaid/SearchPaperslaid.aspx">Papers Laid on the Table of the House</a></li></ul></div><div class="sf-mega-section"><img src="http://loksabhaph.nic.in/writereaddata/menuimages/PapersLaid.jpg" width="214" height="162" /> </div></div></li><li><a id="Legislation" href="http://loksabhaph.nic.in/Legislation/NewAdvsearch.aspx" title="Legislation">Legislation</a><div class="sf-mega"><div class="sf-mega-section"><h2></h2><ul><li><a href="http://loksabhaph.nic.in/Legislation/Legislation.aspx">Introduction(How Bill Becomes Act)</a></li><li><a href="http://loksabhaph.nic.in/Legislation/billintroduce.aspx">Bills Introduced</a></li><li><a href="http://loksabhaph.nic.in/Legislation/billspassed.aspx">Bills Passed</a></li><li><a href="http://loksabhaph.nic.in/Legislation/billspending.aspx">Bills Pending</a></li><li><a href="http://loksabhaph.nic.in/Legislation/billsassented.aspx">Bills Assented</a></li><li><a href="http://loksabhaph.nic.in/Legislation/billslapsed.aspx">Bills Lapsed</a></li><li><a href="http://loksabhaph.nic.in/Legislation/billswithdrawn.aspx">Bills Withdrawn</a></li><li><a href="http://loksabhaph.nic.in/Legislation/billsnegatived.aspx">Bills Negatived</a></li><li><a href="http://loksabhaph.nic.in/Legislation/NewAdvsearch.aspx">Bills Search </a></li><li><a href="http://loksabhaph.nic.in/Legislation/billsdisclaimer.aspx">Disclaimer</a></li></ul></div><div class="sf-mega-section"><img src="http://loksabhaph.nic.in/writereaddata/menuimages/legislation.jpg" width="214" height="162" /> </div></div></li><li><a id="Committees" href="http://loksabhaph.nic.in/Committee/CommitteeHome.aspx" title="Committees">Committees</a><div class="sf-mega"><div class="sf-mega-section"><h2></h2><ul><li><a href="http://loksabhaph.nic.in/Committee/CommitteeHome.aspx">Introduction</a></li><li><a href="http://loksabhaph.nic.in/Committee/Chairmen_Committees.aspx">Chairperson</a></li><li><a href="http://loksabhaph.nic.in/Committee/Summary_of_work.aspx?type=Fin&tab=5">Summary of Work</a></li><li><a href="http://loksabhaph.nic.in/Committee/Schedules.aspx">Committee Meetings Schedule</a></li><li><a href="http://loksabhaph.nic.in/Committee/Bill_Search.aspx">Bills Referred to Committees</a></li><li><a href="http://loksabhaph.nic.in/Committee/reports_page.aspx?tab=6">Reports Presented</a></li><li><a href="https://eparlib.nic.in/handle/123456789/13">Digitized Reports</a></li><li><a href="http://loksabhaph.nic.in/Committee/Press.aspx">Press Release</a></li><li><a href="http://loksabhaph.nic.in/Committee/Search_Membership.aspx?tab=6">Membership Search</a></li><li><a href="http://loksabhaph.nic.in/Committee/Meetings_Today.aspx">Today&#39;s Committee Meetings</a></li><li><a href="http://loksabhaph.nic.in/Committee/subject_page.aspx?tab=6">Committee Subject Selected</a></li><li><a href="http://164.100.47.5/webcom/typewise.aspx?type=2">Department Related-RS</a></li></ul></div><div class="sf-mega-section"><img src="http://loksabhaph.nic.in/writereaddata/menuimages/committee.jpg" width="214" height="162" /> </div></div></li><li><a id="Govt. Assurances" href="http://164.100.47.194/cga/Assu_Search.aspx" title="Govt. Assurances">Govt. Assurances</a><li><a id="SANSAD TV" href="http://sansadtv.nic.in/" title="SANSAD TV">SANSAD TV</a><li><a id="Intranet" href="http://164.100.47.193/intranet/lslogin.aspx" title="Intranet"target="_blank">Intranet</a>
+        </ul>
+    </div>
+</div>
+
+    </div>
+    <!-- Content Area -->
+    <div class="contentArea">
+        <div class="wrapper">
+            <!-- Navigation -->
+            <!-- /Navigation -->
+            <div id="mainContent">
+                
+    <!-- Right Pan -->
+    <div style="margin-bottom: 0px; vertical-align: bottom;">
+    </div>
+    <div id="rtPan">
+        <!-- Speaker -->
+        <div class="speakerColum">
+            <img src="https://loksabha.nic.in/writereaddata/UploadedImage/speaker2.jpg" alt="" />
+            <div class="name">
+                Shri Om Birla<br />
+                <span>Speaker, Lok Sabha</span>
+            </div>
+            <div class="profile">
+                <ul>
+                    <li class="first"><a href=" https://speakerloksabha.nic.in/biography.asp" target="_blank" title="Profile">
+                        Profile</a></li>
+                    <li class="first"><a href=" http://speakerloksabha.nic.in/" target="_blank" title="Office">Office</a></li>
+<li class="last"><a href="https://twitter.com/loksabhaspeaker" target="_blank">       <image src="twt1.jfif" style="height:22px;width:22px;" align="middle"></image></a></li>
+<li class="last"><a href="https://www.facebook.com/LSSpeaker" target="_blank">       <image src="fb.png" style="height:22px;width:22px;" align="middle"></image></a></li>
+
+<li class="last"><a href="https://www.instagram.com/loksabhaspeaker/" target="_blank">       <image src="insta.jfif" style="height:22px;width:22px;" align="middle"></image></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /Speaker -->
+        <!-- Find REPRESENTATIVE -->
+        <div class="findRepresn">
+            <h2>
+                Find Your Representative</h2>
+            <a href="https://loksabha.nic.in/images/map_org.jpg" title="India Map" target="_blank"><img src="https://loksabha.nic.in/images/map.jpg" alt="" style="width: 229px;height: 177px;"/></a>
+            
+            <input name="ctl00$ContentPlaceHolder1$txtMapSearch" type="text" id="ContentPlaceHolder1_txtMapSearch" placeholder="Enter full/part name of member" />
+            
+            
+            
+            <a id="ContentPlaceHolder1_lnkBtnMap" class="iframeRepresentative" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$lnkBtnMap&#39;,&#39;&#39;)">Go</a>
+            
+        </div>
+        <!-- /Find REPRESENTATIVE -->
+        <!-- Related links -->
+        <br />
+        <br />
+        <a href="http://loksabhaph.nic.in/constituent/Constituent.aspx" title="Constituent Assembly">
+            <img src="https://loksabha.nic.in/images/constituent-assembly-bnr.jpg" alt="Constituent Assembly" /></a>
+        <div class="sideLinks">
+            <h2>
+                Related Links</h2>
+            <ul>
+                <li><a href=http://loksabhaph.nic.in/Secretariat/OfficersOfSecretariat.aspx onclick="openExtLink(this.href); return false;" title=Secretariat>Secretariat</a></li><li><a href=http://loksabhaph.nic.in/Recruitment/advandnot.aspx onclick="openExtLink(this.href); return false;" title=Recruitment>Recruitment</a></li><li><a href=http://loksabhaph.nic.in/SCST/SCST_Reservation.aspx onclick="openExtLink(this.href); return false;" title=SC/ST Reservation>SC/ST Reservation</a></li><li><a href=http://loksabhaph.nic.in/Tender.aspx onclick="openExtLink(this.href); return false;" title=Tenders>Tenders</a></li><li><a href=http://loksabhaph.nic.in/RTI/RTIHome.aspx onclick="openExtLink(this.href); return false;" title=RTI>RTI</a></li><li><a href=http://loksabhaph.nic.in/ConferenceLinks.aspx onclick="openExtLink(this.href); return false;" title=Conference>Conference</a></li><li><a href=http://parliamentlibraryindia.nic.in/ onclick="openExtLink(this.href); return false;" title=Parliament Library>Parliament Library</a></li><li><a href=http://eparlib.nic.in/ onclick="openExtLink(this.href); return false;" title=Parliament Digital Library>Parliament Digital Library</a></li><li><a href=http://bpst.nic.in title=PRIDE (Erstwhile BPST)>PRIDE (Erstwhile BPST)</a></li><li><a href=http://parliamentmuseum.org/indextry.html onclick="openExtLink(this.href); return false;" title=Parliament Museum>Parliament Museum</a></li><li><a href=http://pprloksabha.nic.in/ onclick="openExtLink(this.href); return false;" title=PPR>PPR</a></li><li><a href=http://ipg.nic.in onclick="openExtLink(this.href); return false;" title=Indian Parliamentary Group>Indian Parliamentary Group</a></li><li><a href=http://164.100.47.195/LSMPDebates/debview.aspx title=Member&#39;s Participation in Business of the House>Member&#39;s Participation in Business of the House</a></li>
+                <li><a href=http://legislativebodiesinindia.nic.in/ onclick="openExtLink(this.href); return false;" title=Legislative Bodies in India>Legislative Bodies in India</a></li>
+                
+                
+            </ul>
+        </div>
+        <!-- /Related links -->
+        <!-- Useful links -->
+        <div class="sideLinks">
+            <h2>
+                Useful Links</h2>
+            <ul>
+                <li><a href=http://rajyasabha.nic.in onclick="openExtLink(this.href); return false;" title="Rajya Sabha">Rajya Sabha</a></li><li><a href='LegislativeLinks.aspx'  title="Legislative Sites">Legislative Sites</a></li><li><a href='JudicialLinks.aspx' title="Judicial/Legal Sites">Judicial/Legal Sites</a></li><li><a href='OfficialLinks.aspx' title="Official Sites">Official Sites</a></li><li><a href='https://eparlib.nic.in/handle/123456789/14' title="Presidential Addresses">Presidential Addresses</a></li><li><a href='https://eparlib.nic.in/handle/123456789/12' title="Budget Speeches">Budget Speeches</a></li><li><a href=http://loksabhaph.nic.in/writereaddata/VariousLinks/Economic_Survey_2020-21_E.htm title="Economic Survey 2020-21">Economic Survey 2020-21</a></li><li><a href=https://fincomindia.nic.in/ onclick="openExtLink(this.href); return false;" title="Fifteenth Finance Commission Report">Fifteenth Finance Commission Report</a></li><li><a href=https://www.indiabudget.gov.in/ onclick="openExtLink(this.href); return false;" title="Union Budget">Union Budget</a></li><li><a href='DownloadLinks.aspx' title="Downloads">Downloads</a></li><li><a href=http://loksabhaph.nic.in/writereaddata/VariousLinks/dfg.pdf title="Demands For Grants">Demands For Grants</a></li><li><a href=https://email.gov.in/ onclick="openExtLink(this.href); return false;" title="NIC Mail">NIC Mail</a></li><li><a href=http://loksabhaph.nic.in/AddFeedback.aspx onclick="openExtLink(this.href); return false;" title="Feedback">Feedback</a></li>
+                
+                
+                
+            </ul>
+        </div>
+        <!-- /Useful links -->
+        <br />
+        
+            <br />
+            <table><tr><td style=" text-align: left;" valign="top">
+                </td><td style=" text-align: left;">
+
+                    <a href="http://memberls.nic.in/" target="_blank" title="Member's Portal">
+                    <img alt="" src="http://loksabhaph.nic.in/Images/confernceimgwomen.jpg" 
+                        height="40px" width="180px"/></a></td></tr>
+<tr><td style=" text-align: left;" valign="top">
+                </td><td style=" text-align: left;">
+
+                    <br/></td></tr>
+<tr><td style=" text-align: left;" valign="top">
+                <img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="25px" width="30px"/></td><td style=" text-align: left;">
+
+                    <a href="http://loksabhaph.nic.in/Debates/hindi_font.htm" target="_blank" title="Hindi Font"  style="font-size: 15px;">Download Unicode Hindi Font Utsaah
+                    </a></td></tr>
+</table>
+    </div>
+    <!-- /Right Pan -->
+    <!-- Left Pan -->
+    <div id="ltPan">
+        <div class="OtherCalHome">
+            <div class="calndr">
+                <div>
+                    
+                    
+<script type="text/javascript">
+    function OpenLinks(a) {
+        alert('hi');
+        var path = a;
+
+        return true;
+    }
+
+
+    $(document).ready(function () {
+
+        $("#tabsholder").tytabs({
+            tabinit: "1",
+            fadespeed: "fast"
+        });
+
+    });
+
+
+</script>
+<style>
+    #tab1
+    {
+        width: 97px !important;
+        height: 14px !important;
+        text-align: center;
+        vertical-align: top;
+        font-family: trebuchet MS;
+        font-size: 1.6em;
+        font-weight: normal;
+        margin: 0 0 0 0 !important;
+        -webkit-border-radius: 0 0 4px 0;
+        border-radius: 0 0 4px 0;
+    }
+    #tab2
+    {
+        width: 100px !important;
+        height: 14px !important;
+        text-align: center;
+        vertical-align: top;
+        font-family: trebuchet MS;
+        font-size: 1.6em;
+        font-weight: normal;
+        margin: 0 0 0 0 !important;
+        -webkit-border-radius: 0 0 0 3px;
+        border-radius: 0 0 0 3px;
+        color:Green;
+    }
+    
+    #Notab
+    {
+        height: 14px !important;
+        text-align: center;
+        vertical-align: middle;
+        font-family: trebuchet MS;
+        font-size: 1.2em;
+        font-weight: normal;
+        margin: 0 0 0 0 !important;
+        -webkit-border-radius: 0 0 0 3px;
+        border-radius: 0 0 0 3px;
+        display:block;
+        background-color:#dcdcdc;
+        padding:8px 0px;
+        color:Red;
+    }
+    
+    .current-date
+    {
+        background: #007022 !important;
+        color: #fff !important;
+    }
+    .current-date a
+    {
+        color: #fff !important;
+    }
+    .tooltip
+    {
+        display: block;
+        height: 24px;
+        cursor: pointer;
+        color: #fff;
+    }
+    .tooltipster-content a
+    {
+        color: #fff;
+    }
+    #ContentPlaceHolder1_CalenderUC_calDate
+    {
+        border-collapse: collapse;
+        background-color: #efefef;
+        width: 100%;
+        height: 225px;
+        background-color: white;
+        border-color: #999999;
+        font-family: Verdana;
+        font-size: 8pt;
+        color: #FFF;
+    }
+    #ContentPlaceHolder1_CalenderUC_calDate td
+    {
+        background-color: #fff;
+        color: #585858;
+        font-size: 1.2em;
+        padding: 2px;
+        width: 14%;
+        border-radius: 0 0 10px 0px !important;
+        -webkit-border-radius: 0 0 10px 0 !important;
+    }
+    #ContentPlaceHolder1_CalenderUC_calDate td.titleStyle
+    {
+        border: none !important;
+        color: #585858;
+        font-size: 1.2em;
+        padding: 2px;
+        width: 14%;
+    }
+    .titleStyle
+    {
+        color: Black;
+        font-size: 8pt;
+        font-weight: bold;
+        width: 100%;
+        border-collapse: collapse;
+        height: 25px;
+    }
+    
+    .calDate_DayStyle
+    {
+        border: solid 1px #cdcdcd;
+        color: Black;
+        height: 22px;
+        width: 6%;
+    }
+    .calDate_Header
+    {
+        color: White;
+        height: 25px;
+        width: 6%;
+    }
+    
+    #ContentPlaceHolder1_CalenderUC_calDate td a
+    {
+        color: #585858;
+    }
+    #ContentPlaceHolder1_CalenderUC_calDate th
+    {
+        border: none !important;
+        background-color: none;
+        color: #666666;
+        text-transform: capitalize;
+        font-size: 0.9em;
+    }
+    #ContentPlaceHolder1_CalenderUC_calDate td.marked
+    {
+        background-color: #600f31;
+        color: #fff;
+    }
+    #ContentPlaceHolder1_CalenderUC_calDate td.controls
+    {
+    }
+    
+    #ContentPlaceHolder1_CalenderUC_calDate td.marked a
+    {
+        color: #fff;
+    }
+    
+    ul.tabs
+    {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    ul.tabs li
+    {
+        list-style-type: none;
+        display: block;
+        float: left;
+        color: #000;
+        padding: 8px;
+        margin-right: 2px;
+        background-color: #dcdcdc;
+        -moz-border-radius: 4px 4px 0 0;
+        -webkit-border-radius: 4px 4px 0 0;
+        cursor: pointer;
+    }
+    
+    ul.tabs li:hover
+    {
+        background-color: #BABABA;
+    }
+    
+    ul.tabs li.current
+    {
+        background-color: #fff;
+        padding: 8px;
+    }
+    
+    .tabscontent
+    {
+        display: none;
+        width: 100%;
+        text-align: justify;
+    }
+    
+    
+    .yellow-bg
+    {
+        background: #ffcc66 !important;
+        border-radius: 0 0 10px 0px !important;
+        -webkit-border-radius: 0 0 10px 0 !important;
+        color: #fff !important;
+    }
+    .blue-bg
+    {
+        background: #2b5681 !important;
+        border-radius: 10px 0 0 0 !important;
+        -webkit-border-radius: 10px 0 0 0 !important;
+        color: #fff !important;
+    }
+    .blue-bg a
+    {
+        color: #fff !important;
+    }
+    
+    
+    #ContentPlaceHolder1_CalenderUC_calDate tr:first-child td:first-child
+    {
+        background-color: transparent !important;
+    }
+</style>
+<div>
+    <div id="tabsholder" style="height: 270px; width: 230px; border: 1px solid #ccc;">
+        <ul class="tabs">
+            <li class="current" id="tab1">Calendar</li>
+            
+            <span id='Notab' >House not in session</span>
+        </ul>
+        <div class="contents marginbot">
+            <div id="divcontent1" class="tabscontent">
+                <iframe src="ifrmCalendar.aspx" height="247px" width="232px" style="border: medium none;">
+                </iframe>
+            </div>
+            <div id="divcontent2" class="tabscontent">
+                <div id="ContentPlaceHolder1_CalenderUC_NoLiveAvailable">
+                    <b style="color: Red;">&nbsp;&nbsp;Parliament is not in session</b>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                
+                <div class="todayDebate">
+                    <a href="http://loksabhaph.nic.in/Debates/uncorrecteddebate.aspx" target="_blank">
+                        Today's Debate</a>
+                    
+                </div>
+                <div class="billSear">
+                    
+                    <a href="http://loksabhaph.nic.in/Legislation/NewAdvsearch.aspx" target="_blank">
+                        Bill Search</a></div>
+                <div class="billSear" style="width: 205px; text-align: center;">
+                    <a href="http://loksabhaph.nic.in/Committee/Meetings_Today.aspx">Committee Meetings</a>
+                </div>
+
+                <div class="billSear" style="width: 205px; text-align: center;">
+                    
+<style type="text/css">
+    .nav ul li a.main
+    {
+        padding: 0 16px !important;
+        font-size: 0.7em;
+        text-align: center;
+    }
+    .mainli
+    {
+        width: 102px;
+    }
+    .sf-mega-section ul li.subli
+    {
+        width:185px;
+    }
+    /*.sf-mega-section ul li.subli a:hover
+    {
+        width: 75px;
+    }*/
+</style>
+<div>
+    Business</div>
+<div class="nav">
+    
+    <ul class="sf-menu topNav" id="example" style="margin-bottom: 0em!important; width: 206px;">
+        <li class="mainli"><a class="main">Today</a>
+           
+                       
+                         <div class='sf-mega' style='width: 206px'> <div class='sf-mega-section' style='width: 240px;'><div style='font-size: small;'>House is not in session</div></div></div>
+                   
+        </li>
+        <li class="mainli"><a class="main" >Tomorrow</a>
+          
+                       
+
+                        
+                          <div class='sf-mega' style='width: 206px'> <div class='sf-mega-section' style='width: 240px;'><div style='font-size: small;'>House is not in session</div></div></div>
+                
+        </li>
+    </ul>
+    
+</div>
+
+                </div>
+            </div>
+            <br />
+            <div class="welcom">
+                <h2>
+                    Lok Sabha
+                </h2>
+                <p>
+                    Lok Sabha is composed of representatives of the people chosen by direct election on the basis of the adult suffrage. The maximum strength of the House envisaged by the Constitution is 552, which is made up by election of upto 530 members to represent the States, upto 20 members to represent the Union Territories and not more than two members of the Anglo-Indian Community to be nominated by the Hon&#39ble President, if,&#160 in his/her opinion, that community is not adequately represented in the House. The total elective membership is distributed among the States in such a way that the ratio between the number of seats allotted to each State and the population of the State is, so far as practicable, the same for all States.
+                </p>
+                
+            </div>
+
+
+
+
+<div style="width:450px; margin:0px -20px 3px 240px">
+
+
+<span class="style1">
+
+<span class="style1"><br>
+    <a href="eng_speaker.pdf" target="_blank">
+    <img src="https://loksabha.nic.in/new17.gif" align="left" style="margin-left: -7px;margin-top: 13px;width: 85px;">
+<img src="https://loksabha.nic.in/17new.jpg" title="Click to Read" align="left" style="height: 83px;width: 362px;margin-left: 8px;">
+    </a></span>
+    </span>
+
+
+</div>
+        </div>
+        <div class="sliderPic">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16349233581_22102021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker and other Dignitaries in the Conference on the topic ‘Covid pandemic and the role of critical car’ on 22 October 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=609" title='Lok Sabha Speaker and other Dignitaries in the Conference on'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16348432061_21102021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla inaugurating the new building of Shri Krishna Ved Vidyalaya and Shri Gyaneshwar Mandir at Panipat, Haryana on 21 October 2021. Also seen in the photograph are His Excellency Shri Bandaru Dattatreya, Governor of Haryana; Yoga Guru Baba Ramdev; Swami Gyananand... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=608" title='Lok Sabha Speaker Shri Om Birla inaugurating the new buildin'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16337203011_08102021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla in a bilateral meeting with HE Ms. Puan Maharani, Speaker, House of Representative of Republic of Indonesia on 8 October, 2021 on the sidelines of G20 Parliamentary Speakers’ Summit (P20) being organized in Rome from 7 to 8 October 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=607" title='Lok Sabha Speaker Shri Om Birla in a bilateral meeting with '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/banner07102021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla speaking at G20 Parliamentary Speakers’ Summit (P20) on ‘Response to the Social and Employment Crisis caused by the Pandemic’ on 7 October, 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=606" title='Lok Sabha Speaker Shri Om Birla speaking at G20 Parliamentar'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16332036881_02102021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla paying floral tributes to Mahatma Gandhi on his Birth Anniversary on 02 October 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=605" title='Lok Sabha Speaker Shri Om Birla paying floral tributes to Ma'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16328272621_27092021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla lighting the ceremonial lamp in the Programme ‘Tourism for Inclusive Growth’ organized by the Ministry of Tourism, Government of India, to mark the World Tourism Day, 2021 on 27 September, 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=604" title='Lok Sabha Speaker Shri Om Birla lighting the ceremonial lamp'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16325882971_25092021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla addressing the media at the Karnataka Vidhan Soudha premises on 25 September 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=603" title='Lok Sabha Speaker Shri Om Birla addressing the media at the '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16321390351_19092021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla interacting with Children who have lost their parents due to Corona pandemic on 19 September 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=602" title='Lok Sabha Speaker Shri Om Birla interacting with Children wh'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16317383581_15092021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Vice President of India Shri M Venkaiah Naidu PM of India Shri Narendra Modi and Lok Sabha Speaker Shri Om Birla jointly Launched SansadTV on 15 September 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=601" title='Vice President of India Shri M Venkaiah Naidu PM of India Sh'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16317252381_16092021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla; Deputy Chairman, Rajya Sabha Shri Harivansh and Secretary General Lok Sabha Shri Utpal Kumar Singh at the 81st All India Presiding Officers Conference in Parliament House Annexe on 15 September 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=600" title='Lok Sabha Speaker Shri Om Birla; Deputy Chairman, Rajya Sabh'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16315335271_10092021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla Addressing Indian Diaspora at Vienna, Austria on 9 September, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=599" title='Lok Sabha Speaker Shri Om Birla Addressing Indian Diaspora a'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16312151571_09092021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla meeting with the Speaker of Jatiyo Shangsad of Bangladesh, Dr. Shirin Sharmin Chaudhury, at Vienna, on the sidelines of 5WCSP on 9 September, 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=598" title='Lok Sabha Speaker Shri Om Birla meeting with the Speaker of '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16312150911_10092021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla meeting with the Speaker of Federal National Council of UAE H. E. Mr. Saqr Ghobash at Vienna, on the sidelines of 5WCSP on 9 September, 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=597" title='Lok Sabha Speaker Shri Om Birla meeting with the Speaker of '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16310448011_07092021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla Addressing the Fifth World Conference of Speakers of Parliament in Vienna on 7 September, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=596" title='Lok Sabha Speaker Shri Om Birla Addressing the Fifth World C'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16305970161_1092021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla interacting with local representatives Panchayati Raj Institutions of Baramulla District of the Union Territory of Jammu and Kashmir on 01 September 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=595" title='Lok Sabha Speaker Shri Om Birla interacting with local repre'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16304327291_31082021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla interacting with representatives of local bodies of Anantnag, Jammu and Kashmir on 30 August 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=594" title='Lok Sabha Speaker Shri Om Birla interacting with representat'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16304327291_31082021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla interacting with representatives of local bodies of Anantnag, Jammu and Kashmir on 30 August 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=593" title='Lok Sabha Speaker Shri Om Birla interacting with representat'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16303219941_28082021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla visited Pangong Tso lake and interacted with the representatives of Panchayati Raj institutions on 28.08.2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=592" title='Lok Sabha Speaker Shri Om Birla visited Pangong Tso lake and'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16303216221_27082021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla addressing the Media at Leh on the sidelines of the Outreach Programme for empowerment of Panchayati Raj Institutions of the Union Territory of Ladakh on 27 August, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=591" title='Lok Sabha Speaker Shri Om Birla addressing the Media at Leh '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16291350561_16082021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla pays Tributes to the former Prime Minister Shri Atal Bihari Vajpayee at Sadaiv Atal, New Delhi on 16 August, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=590" title='Lok Sabha Speaker Shri Om Birla pays Tributes to the former '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16292831171_15082021_1.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker, Shri Om Birla has greeted the people on the eve of the 75th Independence Day on 15 August 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=589" title='Lok Sabha Speaker, Shri Om Birla has greeted the people on t'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16292830811_14082021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla planted a fruit tree in Bharat-ASEAN Maitri Park, Tughlak Road, New Delhi. Union Minister Shri Arjun Munda and Gen. V.K. Singh, Judges of the Supreme Court, Members of Parliament, Secretary-General, Lok Sabha, and other eminent personalities also planted tre... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=588" title='Lok Sabha Speaker Shri Om Birla planted a fruit tree in Bhar'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16288774951_13082021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla presided over the Annual General Meeting of the Indian Parliamentary Group at Parliament House Complex on 13 August 2021, Rajya Sabha Deputy Chairman Shri Harivansh and Minister of Commerce and Industry, Consumer Affairs, Food and Public Distribution and Lea... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=587" title='Lok Sabha Speaker Shri Om Birla presided over the Annual Gen'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16285317041_09082021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Vice President of India and Chairman, Rajya Sabha, Shri M. Venkaiah Naidu presided over the programme. Lok Sabha Speaker Shri Om Birla; Union Minister of Health and Family Welfare, Shri Mansukh Mandaviya; Minister of State, Ministry of Health and Family Welfare, Dr. Bharati P. Pawar and Me... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=586" title='Vice President of India and Chairman, Rajya Sabha, Shri M. V'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16282535261_06082021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla led Members of Parliament of Lok Sabha and Rajya Sabha to pay floral tributes to former Speaker of Lok Sabha, Dr. G.S. Dhillon in the Central Hall of Parliament House, on his birth anniversary on 06 August 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=585" title='Lok Sabha Speaker Shri Om Birla led Members of Parliament of'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16274908841_29072021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla administering the oath of Hepatitis prevention on the occasion of World Hepatitis Day at Parliament House Complex on 28 July 2021 at Parliament House Complex </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=584" title='Lok Sabha Speaker Shri Om Birla administering the oath of He'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16274908841_29072021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla addressing the gathering on the occasion of World Hepatitis Day at Parliament House Complex on 28 July 2021 at Parliament House Complex </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=583" title='Lok Sabha Speaker Shri Om Birla addressing the gathering on '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16266905291_18072021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Prime Minister Shri Narendra Modi, Lok Sabha Speaker Shri Om Birla and other dignitaries at the meeting of Leaders of Parties in Lok Sabha in Parliament House on 18 July 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=582" title='Prime Minister Shri Narendra Modi, Lok Sabha Speaker Shri Om'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16266905981_18072021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla chairing the meeting of Leaders of Parties in Lok Sabha in Parliament House on 18 July 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=581" title='Lok Sabha Speaker Shri Om Birla chairing the meeting of Lead'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16261103791_12072021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla conducted an inspection of arrangements made for Monsoon Session in the Parliament House Complex on 12 July 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=580" title='Lok Sabha Speaker Shri Om Birla conducted an inspection of a'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16261103791_12072021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla addressing the Press during a media interaction held at Parliament House Complex on 12 July 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=579" title='Lok Sabha Speaker Shri Om Birla addressing the Press during '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16252545491_02072021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla presides over National Tax Convention organized by ICAI in Kota on 02 July 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=578" title='Lok Sabha Speaker Shri Om Birla presides over National Tax C'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16243738751-22062021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla virtually inaugurated an online Indian and foreign language learning course for Members of Parliament, State / UT Legislatures, Officials and their families, organized by the Lok Sabha Secretariat at the Parliament House Complex on 22 June 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=577" title='Lok Sabha Speaker Shri Om Birla virtually inaugurated an onl'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16243860741_22062021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla held a virtual meeting of the All India Presiding Officers Conference at the Parliament House Complex on 22 June 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=576" title='Lok Sabha Speaker Shri Om Birla held a virtual meeting of th'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16241892781_18062021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla interacted with the Press at the Parliament House Complex on 18 June, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=575" title='Lok Sabha Speaker Shri Om Birla interacted with the Press at'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16160879821_18032021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">H E. Mr. Nilamber Acharya, the Ambassador of Nepal called on Lok Sabha Speaker Shri Om Birla in Parliament House on 18 March, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=574" title='H E. Mr. Nilamber Acharya, the Ambassador of Nepal called on'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16159051631_16032021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Honourable Speaker Shri Om Birla presenting a copy of the Constitution of India to IPU President Mr. Duarte Pacheco in Central Hall of the Parliament on 16 March 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=573" title='Honourable Speaker Shri Om Birla presenting a copy of the Co'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16159052431_4-16032021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Honourable Prime Minister Shri Narendra Modi, Honourable Lok Sabha Speaker Shri Om Birla and Honourable Deputy Chairman of Rajya Sabha Shri Harivansh with IPU President Mr. Duarte Pacheco on 16 March 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=572" title='Honourable Prime Minister Shri Narendra Modi, Honourable Lok'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16155786091_12032021-1.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla at the event `Azadi Ka Amrit Mahotsava` at Rai Pithora Fort on 12 March 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=571" title='Lok Sabha Speaker Shri Om Birla at the event Azadi Ka Amrit '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16155786671_12032021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla at the event `Azadi Ka Amrit Mahotsava` at Rai Pithora Fort on 12 March 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=570" title='Lok Sabha Speaker Shri Om Birla at the event Azadi Ka Amrit '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16154856911_11032021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla addressed the Amity Youth Festival 2021 online. The event was organized by Amity University, Uttar Pradesh on 11 March 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=569" title='Lok Sabha Speaker Shri Om Birla addressed the Amity Youth Fe'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16152304101_08032021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla met women journalists, on the occasion of International Women`s Day, in Parliament House Complex on 8 March 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=568" title='Lok Sabha Speaker Shri Om Birla met women journalists, on th'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16152305451-08032021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla met women parliamentarians on the occasion of International Women`s Day, in Parliament House Complex on 8 March 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=567" title='Lok Sabha Speaker Shri Om Birla met women parliamentarians o'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16148586581_03032021-1.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla with Delegates from National Defence College </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=566" title='Lok Sabha Speaker Shri Om Birla with Delegates from National'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16148587021_03032021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla with Delegates from National Defence College </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=565" title='Lok Sabha Speaker Shri Om Birla with Delegates from National'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16143526291_3-260220211.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla addressing the Delegates at the Inaugural Session of Outreach and Familiarization Programme for Local Bodies of Meghalaya and other North Eastern States on 26 February, 2021 in Shillong . </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=564" title='Lok Sabha Speaker Shri Om Birla addressing the Delegates at '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16143526291_3-26022021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla addressing the media after the Inaugural Session of the Outreach and Familiarization Programme for Local Bodies of Meghalaya and other North Eastern States in Shillong on 25 February, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=563" title='Lok Sabha Speaker Shri Om Birla addressing the media after t'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16142744071_2502212.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla addressing Members of Meghalaya Legislative Assembly in Assembly Chamber on 25 February 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=562" title='Lok Sabha Speaker Shri Om Birla addressing Members of Meghal'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16142744071_2502211.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla receiving Guard of Honour in Meghalaya Legislative Assembly Complex on 25 February 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=561" title='Lok Sabha Speaker Shri Om Birla receiving Guard of Honour in'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16142743291_250221.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla being received by Speaker, Meghalaya Legislative Assembly on his arrival in Shillong on 25 February 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=560" title='Lok Sabha Speaker Shri Om Birla being received by Speaker, M'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16138555621_2020211.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla paid rich tributes to Shaheed Lieutenant Gautam Gurung at his statue at GRD crossing in Gorakhpur on 20 February, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=559" title='Lok Sabha Speaker Shri Om Birla paid rich tributes to Shahee'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16138555621_202021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla participate in the Basti Mahotsava as Chief Guest, to unfurled a hundred feet long National Flag as part of the Shikhar Diwas celebration at Shastri Park on 20 February 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=558" title='Lok Sabha Speaker Shri Om Birla participate in the Basti Mah'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16134044701_14022021-1.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla attended on the occasion of &amp;#39;Self-reliant India-capable India&amp;#39; lecture organized on the 53rd death anniversary of Pandit Deendayal Upadhyaya in Dhankya, Jaipur on 14 February 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=557" title='Lok Sabha Speaker Shri Om Birla attended on the occasion of '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16133867091_14022021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla attended Panchakalyanak Pratistha Mahotsabva and met Sant Shiromani 108 Aacharya Pungab Shri Sudhasagar Ji Maharaj and sought his blessings at Bijolia, Bhilwara, Rajasthan on 15 February, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=556" title='Lok Sabha Speaker Shri Om Birla attended Panchakalyanak Prat'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16132139061_13022021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla; Union Minister of Parliamentary Affairs, Coal and Mines, Shri Pralhad Joshi; Rajya Sabha Deputy Chairman Shri Harivansh after paying floral tributes at the portrait of Smt. Sarojini Naidu in the Central Hall of Parliament House on her birth anniversary on 1... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=555" title='Lok Sabha Speaker Shri Om Birla; Union Minister of Parliamen'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16128818891_07022021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker, Shri Om Birla addressed the National Convention of All India Vaishya Ekta Parishad today in Aligarh, Uttar Pradesh on 07 February, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=554" title='Lok Sabha Speaker, Shri Om Birla addressed the National Conv'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16125489761_05022021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla at the third DAV United Festival held in New Delhi on 05 February 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=553" title='Lok Sabha Speaker Shri Om Birla at the third DAV United Fest'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16124441441_04022021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla; Union Minister of Parliamentary Affairs, Coal and Mines, Shri Pralhad Joshi; Leader of Opposition in Rajya Sabha Shri Ghulam Nabi Azad and Minister of State (Independent Charge) Culture and Tourism Shri Prahlad Singh Patel; and other dignitaries after payin... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=552" title='Lok Sabha Speaker Shri Om Birla; Union Minister of Parliamen'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16119307671_29012021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">President of India Shri Ram Nath Kovind arriving in the Central Hall of Parliament House to address the Members of both Houses of Parliament assembled together on 29 January 2021. Also seen in the photograph are Vice President of India and Chairman, Rajya Sabha Shri M. Venkaiah Naidu; Prim... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=551" title='President of India Shri Ram Nath Kovind arriving in the Cent'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16118364961_28012021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla and other dignitaries after paying floral tributes to Lala Lajpat Rai in the Central Hall of Parliament House on his birth anniversary on 28 January 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=550" title='Lok Sabha Speaker Shri Om Birla and other dignitaries after '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16117746961_26012021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla inaugurated `Bharat Parv-2021` organised by the Ministry of Tourism in New Delhi on 26 January 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=549" title='Lok Sabha Speaker Shri Om Birla inaugurated &amp;#39;Bharat Parv-202'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16114237781_23012021.jpg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla, Union Minister of Defence Shri Rajnath Singh; Leader of Opposition (Rajya Sabha) Shri Ghulam Nabi Azad and other dignitaries after paying floral tributes at the portrait of Netaji Subhas Chandra Bose in the Central Hall of Parliament House on his birth anni... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=548" title='Lok Sabha Speaker Shri Om Birla, Union Minister of Defence S'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16112518081_21012021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla conducted an inspection of various facilities in the Parliament House Complex ahead of the forthcoming Budget Session on 21 January, 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=547" title='Lok Sabha Speaker Shri Om Birla conducted an inspection of v'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16110833871_19012021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla presided over a meeting with senior officials from Ministry of Health and Family Welfare, Ministry of AYUSH, NDMC, CPWD, DRDO, ICMR, AIIMS, Delhi Police and Government of NCT of Delhi at Parliament Library Building on 19 January, 2021 to discuss arrangements... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=546" title='Lok Sabha Speaker Shri Om Birla presided over a meeting with'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16110032661_18012021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla inaugurated the programme `Online presentations by eminent social workers for the benefit of Honorable Members of Parliament`, being organized by the Parliamentary Research and Training Institute for Democracies (erstwhile BPST) in Extension of Parliament Ho... </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=545" title='Lok Sabha Speaker Shri Om Birla inaugurated the programme &amp;#39;O'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16110032661_18012021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla attended the virtual meeting of the Standing Committee of the Conference of the Speakers and Presiding Officers of the Commonwealth (CSPOC) on 18 January, 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=544" title='Lok Sabha Speaker Shri Om Birla attended the virtual meeting'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16110032661_18012021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla attended the virtual meeting of the Standing Committee of the Conference of the Speakers and Presiding Officers of the Commonwealth (CSPOC) on 18 January, 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=543" title='Lok Sabha Speaker Shri Om Birla attended the virtual meeting'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16105594691_12012021-2.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker, Shri Om Birla, in a virtual meet with Mr. David Sassoli, President of the European Parliament on 13 January 2021. </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=542" title='Lok Sabha Speaker, Shri Om Birla, in a virtual meet with Mr.'>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16104731551_12022021-1.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla speaking at the Valedictory Function of National Youth Parliament 2021 in Central Hall, Parliament House on 12 January 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=541" title='Lok Sabha Speaker Shri Om Birla speaking at the Valedictory '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16103833871_12012021.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla addressing the participants at the Inaugural Session of National Youth Parliament 2021 held in Central Hall, Parliament House on 11 January 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=540" title='Lok Sabha Speaker Shri Om Birla addressing the participants '>Read more...</a></div></div></li><li><img width="534px" height="288px" src='http://loksabhaph.nic.in/writereaddata/BannerImages/16100406691_070121.jpeg'/> <div class="flex-caption"><div class="caption_title_line"><p style="font-size: 12px;">Lok Sabha Speaker Shri Om Birla at the MSME National Conclave, organized by the Institute of Chartered Accountants of India (ICAI) in New Delhi on 7 January 2021 </p><a class="iframeScroll" href="PopupSpeakerEvent.aspx?Id=539" title='Lok Sabha Speaker Shri Om Birla at the MSME National Conclav'>Read more...</a></div></div></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="OtherUpdates">
+            <div class="cloudLinks">
+                <ul>
+                    <li><a href=http://loksabhaph.nic.in/dyspeakerlist.aspx onclick="openExtLink(this.href); return false;" title=Dy.Speakers>Dy.Speakers</a></li><li><a href=http://10.21.202.188/loksabha_hindi/sansdiya_shabdavli.htm title=Parliamentary Glossary>Parliamentary Glossary</a></li><li><a href=http://loksabhaph.nic.in/LeaderofHouse.aspx onclick="openExtLink(this.href); return false;" title=Leaders of the House>Leaders of the House</a></li><li><a href=http://loksabhaph.nic.in/LeaderofOpposition.aspx onclick="openExtLink(this.href); return false;" title=Leaders of the Opposition>Leaders of the Opposition</a></li><li><a href=http://loksabhaph.nic.in/ShowPanelofChairperson.aspx?fmane=panel_chairmen.pdf onclick="openExtLink(this.href); return false;" title=Panel of Chairpersons>Panel of Chairpersons</a></li><li><a href=https://www.india.gov.in/my-government/whos-who/council-ministers onclick="openExtLink(this.href); return false;" title=Council of Ministers>Council of Ministers</a></li><li><a href=http://loksabhaph.nic.in/Secretary_GEN.html onclick="openExtLink(this.href); return false;" title=Secretaries - General>Secretaries - General</a></li><li><a href=https://legislative.gov.in/constitution-of-india onclick="openExtLink(this.href); return false;" title=Constitution of India>Constitution of India</a></li><li><a href=http://loksabhaph.nic.in/ParliamentProcedureList.aspx onclick="openExtLink(this.href); return false;" title=Parliamentary Procedures>Parliamentary Procedures</a></li><li style='width: 240px;'><a href=https://eparlib.nic.in/bitstream/123456789/762633/1/Practice_and_Procedure_of_Parliament_7th_ed_2016_English.pdf onclick="openExtLink(this.href); return false;" title=Practice And Procedure Of Parliament>Practice And Procedure Of Parliament</a></li><li style='width: 430px;'><a href=http://loksabhaph.nic.in/Parliament.aspx onclick="openExtLink(this.href); return false;" title=About Parliament/ Amenities for Members of Parliament/ Education>About Parliament/ Amenities for Members of Parliament/ Education</a></li><li><a href=http://loksabhaph.nic.in/JournalParliament.aspx onclick="openExtLink(this.href); return false;" title=Journal of Parliamentary Information>Journal of Parliamentary Information</a></li><li><a href=http://loksabhaph.nic.in/FAQ.aspx onclick="openExtLink(this.href); return false;" title=Frequently Asked Questions(FAQ>Frequently Asked Questions(FAQ</a></li>
+                    
+                </ul>
+            </div>
+            <div class="highlit">
+                <h2>
+                    <a style="color: Black;" href="http://loksabhaph.nic.in/Members/PartyWiseStatisticalList.aspx" title="Party-wise Representation of Members">
+                        Party-wise Representation of Members</a></h2>
+                
+                
+                <iframe id="ContentPlaceHolder1_ifrmParty" src="PartywiseChart.aspx" width="300px" height="260px" frameborder="0"></iframe>
+            </div>
+            
+
+<style type="text/css">
+    .update
+    {
+        height: 246px;
+        padding: 0;
+        padding: 0;
+    }
+    span.controlls2
+    {
+        right: 5px;
+        top: 6px;
+    }
+    span.controlls2 a
+    {
+        float: right;
+        display: block;
+        width: 16px;
+        height: 15px;
+        overflow: hidden;
+        padding: 0;
+    }
+    span.controlls2 a.stop, span.controlls2 a.play
+    {
+        background-image: url(images/btn-set2.gif);
+        background-repeat: no-repeat;
+        font-size: 0;
+        text-indent: -10000px;
+    }
+    
+    
+    .update ul
+    {
+        height: 203px;
+        list-style: none outside none;
+    }
+    
+    .update h2 span a.stop
+    {
+        background-position: 0px 0px;
+    }
+    
+    .update h2 span a.play
+    {
+        background-position: 0px 100%;
+    }
+</style>
+<div class="update">
+    <h2>
+        Updates<span class="controlls2"><a id="stop2" class="stop" href="javascript:void(0);"></a><a
+            id="play2" class="play" style="display: none;" href="javascript:void(0);"></a></span></h2>
+    
+    <ul id="ticker2" class="ticker" style="overflow: hidden;">
+        <li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637686931387780072_Upload.pdf">Revised Additional Terms and Conditions document w.r.t the bid uploaded on GeM portal for Procurement of Office Automation Software.&nbsp;&nbsp;<img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637660389723393696_prorogue notification.pdf">Prorogation of 6th session of 17th Lok Sabha.&nbsp;&nbsp;<img alt="" src="images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637655101366989622_Interviews in connection with Advt 022021.pdf">Interviews in connection with Advt. 02/2021 dated 07.07.2021(SANSAD TV)&nbsp;&nbsp;<img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637650071295276153_SANSAD TV NOTICE ADVT 022021.pdf">Engagement of Consultants/Professionals for Sansad TV vide Advertisement No 02/2021 dated 07.07.2021 - Interview regarding.&nbsp;&nbsp;<img alt="" src="images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637647334008434422_32726.pdf">Allotment of Division/Seat number in Lok Sabha&nbsp;&nbsp;<img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637642976127246634_HW_T_ CAMC_11082021.pdf">Bid document as uploaded on GeM Portal for Comprehensive Annual Maintenance Contract of hardware items and peripherals installed in Parliament House Complex.&nbsp;&nbsp;<img alt="" src="images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637641297396177350_Tender_222_UPS.pdf">Bid document as uploaded in GeM Portal for procurement of 222 UPS&nbsp;&nbsp;<img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637623161150164958_Oath circular.pdf">OATH/AFFIRMATION BY NEW MEMBERS&nbsp;&nbsp;<img alt="" src="images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637622962722450464_feedbackform.pdf">Feedback Form for valuable suggestions of the Honorable Members to improve the services of the LARRDIS&nbsp;&nbsp;<img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637618810662103202_Advertisement_empanelment_book_supplier.pdf">ADVERTISEMENT FOR EMPANELMENT OF BOOK SUPPLIER&nbsp;&nbsp;<img alt="" src="images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637617040359251431_32662.pdf">Re-allotment of Division/Seat Number in Lok Sabha.&nbsp;&nbsp;<img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637614513831219606_SANSAD TV INTERNSHIP PROGRAMME NOTICE.pdf">Sansad TV Internship Programme&nbsp;&nbsp;<img alt="" src="images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637614500324241944_corrigendumlstv09072021.pdf">Corrigendum with reference to Advt. No. 02/2021 dated 7 July 2021 regarding Engagement of Consultant(s)/Professional(s) in Sansad Television&nbsp;&nbsp;<img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637612716511972521_Recruitmentlstv07072021.pdf">Engagement of Consultant(s)/Professional(s) in Sansad Television&nbsp;&nbsp;<img alt="" src="images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637599785292537144_MPLADS_22062021.pdf">Third Party Physical Monitoring (TPM) of MPLADS-request for feedback from Honourable MPs on MPLADS-regarding.&nbsp;&nbsp;<img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637592960853858847_Party position as on 13 June 2021.pdf">Party position in Lok Sabha.&nbsp;&nbsp;<img alt="" src="images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://164.100.47.193/intra-maintain/files/01062021_111110_1921681193.pdf">Election of New Members to Lok Sabha.&nbsp;&nbsp;<img alt="" src="https://loksabha.nic.in/images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637522934158175535_Provisional - 5th Session of 17 Lok Sabha.pdf">Statement of Work  transacted during 5th Session of the 17th Lok Sabha&nbsp;&nbsp;<img alt="" src="images/newstar.gif" height="20px" width="30px" /></a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637520926602122127_MPLADS.pdf">Release of pending instalments under MPLADS</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637478608504031250_PRISM-english.pdf">PRISM (Parliamentary Research and Information Support for Members of Parliament) -    a round-the-clock service, a new initiative</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637474428804758789_Attendance app bulletin.pdf">Implementation of a Mobile Attendance Application `Attendance Register` for marking of attendance by Members of Parliament.</a></li><li><a target="_blank" href="https://loksabha.nic.in/livecast.htm">Watch Live the Foundation Stone Laying of the New Parliament Building on 10 December 2020</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637351746108226926_hardware08092020.pdf">Secured high speed Wi-Fi facility for Members of Parliament</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637290429783131705_Booklet_English_Ver_1.pdf">Achievements Of 1st Year Of 17th Lok Sabha</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637222181752837142_219020.pdf">Govt. Ordinance for deduction of 30% salary of Members of Parliament.</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637221156811501834_Gazette_Notification.pdf">Gazette Notifications regarding amendments in Constituency Allowance and Office Expenses Allowance.</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637335391399623375_Museum_20082020.pdf">Deposit of archival/historical material in Parliament Museum and Archives and Archival books and Photographs available in Parliamentary Museum and Archives</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_637057202988554814_hs message.pdf">Message of Hon`ble Speaker Lok Sabha</a></li><li><a target="_blank" href="http://parliamentlibraryindia.nic.in/audio_speeches.aspx">Audio Speeches of Prime Ministers</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_636949112454847142_Information Guide.pdf">Information Guide, 2019 for Members of Lok Sabha</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_636989829982630162_paragraph on Reference Division LARRDIS.pdf">Information on Members` Reference Service</a></li><li><a target="_blank" href="https://ndl.iitkgp.ac.in/">Availability of Digital Resources to Members of Parliament</a></li><li><a target="_blank" href="http://loksabhaph.nic.in/writereaddata/Updates/EventLSS_635627157027445072_salient.pdf">Salient features of the Scheme of Financial Entitlement of Member for Purchase of Computer Equipment</a></li>
+        
+        
+    </ul>
+    
+    <a href="javascript:void(0);" title="" class="viewAll iframeUpdates">View All</a>
+</div>
+
+            
+        </div>
+        
+        <div class="OtherPhotoVirtual">
+            
+<div class="photoGallHome">
+    <div>
+        <div style="float: left;">
+            <h2 style="width: 382px;">
+                PHOTO GALLERY
+            </h2>
+        </div>
+        <div style="float: left;">
+            
+            <a href="http://loksabhaph.nic.in/PhotoGal/ViewAllPhotoCategory.aspx" title="View All" class="viewAll">View All</a></div>
+    </div>
+    
+    
+    <ul>
+        
+                
+                
+                <a href=http://loksabhaph.nic.in/PhotoGal/PhotoGalleryPicture.aspx?GalID=3&CatDesc=Central Hall><li style="text-align: center;"><img id="imageID" data-frame='<%#http://loksabhaph.nic.in/writereaddata/CoverGalaryPhoto/potraits.jpg %>' src='http://loksabhaph.nic.in/writereaddata/CoverGalaryPhoto/potraits.jpg' title=Portraits' data-description='Portraits' width="140px;" height="160px;" /></li></a><a href=http://loksabhaph.nic.in/PhotoGal/PhotoGalleryPicture.aspx?GalID=2><li style="text-align: center;"><img id="imageID" data-frame='<%#http://loksabhaph.nic.in/writereaddata/CoverGalaryPhoto/paintings.jpg %>' src='http://loksabhaph.nic.in/writereaddata/CoverGalaryPhoto/paintings.jpg' title=Paintings/Photos' data-description='Paintings/Photos' width="140px;" height="160px;" /></li></a><a href=http://loksabhaph.nic.in/PhotoGal/PhotoGalleryPicture.aspx?GalID=1><li style="text-align: center;"><img id="imageID" data-frame='<%#http://loksabhaph.nic.in/writereaddata/CoverGalaryPhoto/statues-busts.jpg %>' src='http://loksabhaph.nic.in/writereaddata/CoverGalaryPhoto/statues-busts.jpg' title=Statues and Busts' data-description='Statues and Busts' width="140px;" height="160px;" /></li></a>
+            
+    </ul>
+</div>
+
+            
+<div class="virtualTour">
+    <h2>
+        VIRTUAL TOUR</h2>
+       
+
+<span class="tooltip" title=" &lt;a href='http://webcast.gov.in/parliament/phouse.html'&gt; Parliament House(Hindi)&lt;/a&gt; | &lt;a href='http://webcast.gov.in/parliament/plb.html'&gt; Parliament Library(English)&lt;/a&gt;"><img src="https://loksabha.nic.in/images/virtual-tour.jpg" alt="" /></span> 
+ 
+    
+    
+    
+</div>
+
+        </div>
+        
+        <br class="spacer" />
+    </div>
+    <!-- /Left Pan -->
+
+            </div>
+            <br class="spacer" />
+            <div class="btmLogos">
+                <ul>
+                    <li><a href="http://sansadtv.nic.in/" target="_blank">
+                        <img src="https://loksabha.nic.in/images/loksabah-logo.jpg" /></a></li>
+                    <li><a href="http://data.gov.in/" target="_blank">
+                        <img src="https://loksabha.nic.in/images/data-gov-logo.jpg" alt="" /></a></li>
+                    <li><a href="http://webcast.gov.in/" target="_blank">
+                        <img src="images/webcast-gov-logo.jpg" alt="" /></a></li>
+                    <li><a href="http://india.gov.in/" target="_blank">
+                        <img src="https://loksabha.nic.in/images/india-gov-logo.jpg" alt="" /></a></li>
+                    <li><a href="http://www.incredibleindia.org/" target="_blank">
+                        <img src="https://loksabha.nic.in/images/incredible-logo.jpg" alt="" /></a></li>
+		    <li class="last"><a href="https://indiacode.nic.in/" target="_blank">
+                        <img src="https://loksabha.nic.in/images/india_code.jpg" alt="" style="height: 52px;"/></a></li>
+                </ul>
+            </div>
+            <p class="devlpBy">
+                Developed and Hosted by <strong><a href="http://www.nic.in/" target="_blank">National
+                    Informatics Centre (NIC)</a></strong>
+                <br />
+                <span style="color: #9F382A; font-weight: bold;">Content on this website is published,
+                    managed &amp; maintained by Software Unit, Computer (HW &amp; SW) Management. Branch,
+                    Lok Sabha Secretariat</span></p>
+        </div>
+    </div>
+    <!-- /Content Area -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footLinkPan">
+                <ul>
+                    <li><a href=http://loksabha.nic.in title=Home>Home</a></li><li><a href=http://loksabhaph.nic.in/Members/MemberHomepage.aspx title=Members>Members</a></li><li><a href=http://loksabhaph.nic.in/Business/ListofBusiness.aspx title=Business>Business</a></li><li><a href=http://loksabhaph.nic.in/Questions/QuestionsHome.aspx title=Questions>Questions</a></li><li><a href=http://loksabhaph.nic.in/Debates/debates.aspx title=Debates>Debates</a></li><li><a href=http://loksabhaph.nic.in/PapersLaid/SearchPaperslaid.aspx title=Papers Laid>Papers Laid</a></li>
+                </ul>
+                <ul>
+                    <li><a href=http://loksabhaph.nic.in/Legislation/NewAdvsearch.aspx title=Legislation>Legislation</a></li><li><a href=http://loksabhaph.nic.in/Committee/CommitteeHome.aspx title=Committees>Committees</a></li><li><a href=http://sansadtv.nic.in/ title=SANSAD TV>SANSAD TV</a></li><li><a href=http://loksabhadocs.nic.in/intranet/lslogin.aspx title=Intranet>Intranet</a></li><li><a href=http://loksabhaph.nic.in/Secretariat/OfficersOfSecretariat.aspx title=Secretariat>Secretariat</a></li><li><a href=http://bpst.nic.in/ title=PRIDE>PRIDE</a></li>
+                </ul>
+                <ul>
+                    <li><a href=http://loksabhaph.nic.in/Recruitment/advandnot.aspx title=Recruitment>Recruitment</a></li><li><a href=http://loksabhaph.nic.in/SCST/SCST_Reservation.aspx title=SC/ST Reservation>SC/ST Reservation</a></li><li><a href=http://loksabhaph.nic.in/ConferenceLinks.aspx title=Conference>Conference</a></li><li><a href=http://parliamentlibraryindia.nic.in/ title=Parliament Library>Parliament Library</a></li><li><a href=http://parliamentmuseum.org/indextry.html title=Parliament Museum>Parliament Museum</a></li>
+                </ul>
+                <ul>
+                    <li><a href=http://loksabhaph.nic.in/Parliament.aspx title=About Parliament>About Parliament</a></li><li><a href=http://loksabhaph.nic.in/PhotoGal/ViewAllPhotoCategory.aspx title=Photo Gallery>Photo Gallery</a></li><li><a href=http://loksabhaph.nic.in/Index.aspx title=Related Links>Related Links</a></li><li><a href=http://loksabhaph.nic.in/RTI/RTIHome.aspx title=RTI>RTI</a></li><li><a href=http://loksabhaph.nic.in/Tender.aspx title=Tenders>Tenders</a></li><li><a href=http://loksabhaph.nic.in/FAQ.aspx title=FAQ>FAQ</a></li>
+                </ul>
+                <ul>
+                    <li><a href=http://speakerloksabha.nic.in/biography.asp title=Speaker>Speaker</a></li><li><a href=http://loksabhaph.nic.in/writereaddata/DS/Deputy_speaker.html title=Dy. Speaker>Dy. Speaker</a></li><li><a href=http://loksabhaph.nic.in/Members/MemberBioprofile.aspx?mpsno=4589 title=Leader of the House>Leader of the House</a></li><li><a href=http://loksabhaph.nic.in/writereaddata/Members/panel_chairmen.pdf title=Panel of Chairpersons>Panel of Chairpersons</a></li><li><a href=http://loksabhaph.nic.in/Webinformation.aspx title=Contact Us>Contact Us</a></li><li><a href=http://loksabhaph.nic.in/AddFeedback.aspx title=Feedback>Feedback</a></li>
+                </ul>
+                <ul>
+                    <li><a href=http://cabsec.nic.in/showpdf.php?type=council_cabinet_cabinetministers title=Council of Ministers>Council of Ministers</a></li><li><a href=http://loksabhaph.nic.in/pub_ministry.aspx title=Publications of Ministries>Publications of Ministries</a></li><li><a href=http://loksabhaph.nic.in/ParliamentProcedureList.aspx title=Parliamentry Procedures>Parliamentry Procedures</a></li><li><a href=http://loksabhaph.nic.in/JournalParliament.aspx title=Journal of Parliamentary Information>Journal of Parliamentary Information</a></li>
+                    <li style="color: White;"><strong>Visitor's Counter : </strong>
+                        101207406</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footBtmStrip">
+        <div class="wrapper">
+            <ul>
+                <li><a href="http://loksabhaph.nic.in/Copyright.aspx?linkid=1" title="Copyright">Copyright</a></li>
+                <li><a href="http://loksabhaph.nic.in/PrivacyPolicy.aspx?linkid=2" title="Privacy Policy">Privacy Policy</a></li>
+                <li><a href="http://loksabhaph.nic.in/Disclaimer.aspx?linkid=3" title="Disclaimer">Disclaimer</a></li>
+                <li><a href="http://loksabhaph.nic.in/TermsConditions.aspx?linkid=4" title="Terms & Conditions">Terms &amp; Conditions</a></li>
+                <li><a href="http://loksabhaph.nic.in/AccessibilityStatement.aspx?linkid=5" title="Accessibility Statement">Accessibility
+                    Statement</a></li>
+                <li><a href="http://loksabhaph.nic.in/AccessibilityOptions.aspx?linkid=6" title="Accessibility Options">Accessibility
+                    Options</a></li>
+                <li><a href="http://loksabhaph.nic.in/AddFeedback.aspx" title="Feedback">Feedback</a></li>
+                <li><a href="http://loksabhaph.nic.in/Sitemap.aspx" title="Site Map">Site Map</a></li>
+            </ul>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
